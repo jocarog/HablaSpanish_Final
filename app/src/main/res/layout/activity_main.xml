@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="24dp"
+android:paddingTop="24dp"
+android:paddingLeft="24dp"
+android:paddingRight="24dp"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/question_mark" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Spanish Proficiency Quiz"
+android:textStyle="bold"
+android:textSize="30sp"
+android:textAlignment="center"/>
+
+<EditText
+android:id="@+id/name_field"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:inputType="textCapWords"
+android:hint="Name"
+android:paddingBottom="24dp"
+android:paddingTop="24dp"/>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="1. Please Translate: Tengo Hambre"
+android:paddingTop="16dp"
+android:paddingBottom="16dp"
+android:textSize="16sp"/>
+
+<EditText
+ android:id="@+id/translated_answer_1"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:inputType="textCapSentences"
+android:hint="Answer"
+android:paddingBottom="24dp"/>
+
+<TextView
+android:id="@+id/question_2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="2. What does Alphabet in spanish means?"
+android:paddingTop="16dp"
+android:paddingBottom="16dp"
+android:textSize="16sp"/>
+<CheckBox
+android:id="@+id/answer_2_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Alfabeto"
+android:textAppearance="?android:textAppearanceMedium"
+android:textSize="16sp"
+android:layout_marginBottom="16dp"
+android:paddingLeft="24dp"/>
+<CheckBox
+android:id="@+id/answer_2_2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Abecedario"
+android:textAppearance="?android:textAppearanceMedium"
+android:textSize="16sp"
+android:layout_marginBottom="16dp"
+android:paddingLeft="24dp"/>
+<CheckBox
+android:id="@+id/answer_2_3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Analfabeto"
+android:textAppearance="?android:textAppearanceMedium"
+android:textSize="16sp"
+android:layout_marginBottom="16dp"
+android:paddingLeft="24dp"/>
+
+<TextView
+android:id="@+id/question_3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="3. Mi nombre es... Means?"
+android:paddingTop="16dp"
+android:paddingBottom="16dp"
+android:textSize="16sp"/>
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:id="@+id/radio_group_1">
+<RadioButton
+android:id="@+id/answer_3_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="That's his name..."
+    android:checked="false"/>
+<RadioButton
+android:id="@+id/answer_3_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="My name is"
+    android:checked="false"/>
+<RadioButton
+android:id="@+id/answer_3_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your name is?"
+    android:checked="false"/>
+
+</RadioGroup>
+<TextView
+android:id="@+id/question_4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="4. Translate: Necesito Ayuda"
+android:paddingTop="16dp"
+android:paddingBottom="16dp"
+android:textSize="16sp"/>
+<EditText
+android:id="@+id/translated_answer_2"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:inputType="textCapSentences"
+android:hint="Answer"
+android:paddingBottom="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_green_light"
+        android:onClick="submit"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
