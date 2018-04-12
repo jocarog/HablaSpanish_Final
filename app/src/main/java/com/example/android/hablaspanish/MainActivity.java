@@ -144,11 +144,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence answer1Text;
         // Singular
         if (sum == 1) {
-            answer1Text = name + " you got " +sum + " question right! \nCongratulations!";
+            answer1Text = name + " you got " +sum + " answer right!";
         }
         // Plural
         else {
-            answer1Text = name + " you got " + sum + " questions right! \nCongratulations!";
+            answer1Text = name + " you got " + sum + " answers right!";
         }
         Toast toast = Toast.makeText(context, answer1Text, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
