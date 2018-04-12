@@ -141,14 +141,36 @@ android:inputType="textCapSentences"
 android:hint="Answer"
 android:paddingBottom="24dp"/>
 
-    <Button
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:layout_marginTop="16dp"
-        android:textColor="@android:color/holo_green_light"
         android:onClick="submit"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         android:layout_alignParentLeft="true"/>
+
+
+    <Button
+    android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:autoLink="web"
+        android:cursorVisible="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/button_go"
+        android:text="Feeling Lucky?"
+        android:linksClickable="true"
+        android:onClick="goToGo"
+        android:layout_marginTop="16dp"/>
+
+
+    </RelativeLayout>
 
 </LinearLayout>
 

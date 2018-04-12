@@ -1,6 +1,8 @@
 package com.example.android.hablaspanish;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -9,6 +11,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 @SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
@@ -99,20 +105,38 @@ public class MainActivity extends AppCompatActivity {
                 sum++;
         }
 
+        EditText nameField = (EditText) findViewById(R.id.name_field);
+        String name = nameField.getText().toString();
+
         Context context = getApplicationContext();
         CharSequence answer1Text;
         // Singular
         if (sum == 1) {
-            answer1Text = "You got " + sum + " question right!";
+            answer1Text = name + " you got " +sum + " question right! \nCongratulations!";
         }
         // Plural
         else {
-            answer1Text = "You got " + sum + " questions right!";
+            answer1Text = name + " you got " + sum + " questions right! \nCongratulations!";
         }
         Toast toast = Toast.makeText(context, answer1Text, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
+
+    /*
+    *feeling lucky? open google website!
+     */
+    public void goToGo (View view) {
+        goToUrl ( "https://www.google.com/");
+    }
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
 }
+
+
 
 
