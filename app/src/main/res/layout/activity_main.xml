@@ -25,7 +25,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 <TextView
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Spanish Proficiency Quiz"
+android:text="Spanish Proficiency Quiz for Emergencies"
 android:textStyle="bold"
 android:textSize="30sp"
 android:textAlignment="center"
@@ -60,7 +60,7 @@ android:paddingBottom="24dp"/>
 android:id="@+id/question_2"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="2. What does Alphabet in spanish means?"
+android:text="2. How do you say in spanish: \nI need an ambulance"
 android:paddingTop="16dp"
 android:paddingBottom="16dp"
 android:textSize="16sp"/>
@@ -68,7 +68,7 @@ android:textSize="16sp"/>
 android:id="@+id/answer_2_1"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Alfabeto"
+android:text="Necesito una ambulancia"
 android:textAppearance="?android:textAppearanceMedium"
 android:textSize="16sp"
 android:layout_marginBottom="16dp"
@@ -77,7 +77,7 @@ android:paddingLeft="24dp"/>
 android:id="@+id/answer_2_2"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Abecedario"
+android:text="Necesito un coche"
 android:textAppearance="?android:textAppearanceMedium"
 android:textSize="16sp"
 android:layout_marginBottom="16dp"
@@ -86,7 +86,7 @@ android:paddingLeft="24dp"/>
 android:id="@+id/answer_2_3"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Analfabeto"
+android:text="Necesito una patrulla"
 android:textAppearance="?android:textAppearanceMedium"
 android:textSize="16sp"
 android:layout_marginBottom="16dp"
@@ -111,19 +111,25 @@ android:id="@+id/answer_3_1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="That's his name..."
-    android:checked="false"/>
+    android:checked="false"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"/>
 <RadioButton
 android:id="@+id/answer_3_2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="My name is"
-    android:checked="false"/>
+    android:checked="false"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"/>
 <RadioButton
 android:id="@+id/answer_3_3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Your name is?"
-    android:checked="false"/>
+    android:checked="false"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"/>
 
 </RadioGroup>
 <TextView
@@ -141,6 +147,58 @@ android:layout_width="match_parent"
 android:inputType="textCapSentences"
 android:hint="Answer"
 android:paddingBottom="24dp"/>
+    <TextView
+        android:id="@+id/question_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Please Translate: Estoy perdido."
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/translated_answer_3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textCapSentences"
+        android:hint="Answer"
+        android:paddingBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/question_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. Scenario: You go to Cancun on vacation \nafter leaving the club the cops stop you \nand your friends, How do you say in spanish: \ncan I call my lawyer?"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:id="@+id/answer_6_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puedo llamar a mi abogado?"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="24dp"/>
+    <CheckBox
+        android:id="@+id/answer_6_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puedo llamar"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="24dp"/>
+    <CheckBox
+        android:id="@+id/answer_6_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puedo nombrar a alguien"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="24dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

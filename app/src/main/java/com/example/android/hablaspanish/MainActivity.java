@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox answer_2_3 = findViewById(R.id.answer_2_3);
 
         // Checkbox 1 is the correct answer.
-        // The logic here checks for answers 1 and 3 to be checked and all others to be unchecked.
+        // The logic here checks for answers 1 to be checked and all others to be unchecked.
         return answer_2_1.isChecked() && !answer_2_2.isChecked() && !answer_2_3.isChecked();
     }
 
@@ -82,6 +82,36 @@ public class MainActivity extends AppCompatActivity {
 
         return respuesta4Str.equalsIgnoreCase("I need help");
     }
+/*
+** This method is called from the Submit method and gets the edit text views answer for
+ * question 5 that needs user input.
+ */
+
+    private boolean getRespuesta5() {
+        EditText respuesta5 = (EditText) findViewById(R.id.translated_answer_3);
+        // Clear the focus after retrieving the text
+        respuesta5.clearFocus();
+        String respuesta5Str = respuesta5.getText().toString();
+
+        return respuesta5Str.equalsIgnoreCase("I am lost");
+    }
+
+    /*
+        * This method is called from the Submit method and gets the check box view answers for
+        question 2.
+                */
+    private boolean getRespuesta6() {
+        // The Check Box count starts at 1 and goes from top to bottom.
+        CheckBox answer_6_1 = findViewById(R.id.answer_6_1);
+        CheckBox answer_6_2 = findViewById(R.id.answer_6_2);
+        CheckBox answer_6_3 = findViewById(R.id.answer_6_3);
+
+        // Checkbox 1 is the correct answer.
+        // The logic here checks for answers 3 to be checked and all others to be unchecked.
+        return answer_6_3.isChecked() && !answer_6_2.isChecked() && !answer_6_1.isChecked();
+    }
+
+
 
     /*
      * This method is called when the submit button is clicked. It is the main method of the
@@ -89,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
      * calculated and then displayed on the screen via a Toast message.
      */
     public void submit(View view) {
-        int numPreguntas = 4;
+        int numPreguntas = 6;
         int sum = 0;
 
         boolean[] pregunta = new boolean[numPreguntas];
@@ -98,6 +128,8 @@ public class MainActivity extends AppCompatActivity {
         pregunta[1] = getRespuesta2();
         pregunta[2] = getRespuesta3();
         pregunta[3] = getRespuesta4();
+        pregunta[4] = getRespuesta5();
+        pregunta[5] = getRespuesta6();
 
 
         for (int i = 0; i < numPreguntas; i++) {
