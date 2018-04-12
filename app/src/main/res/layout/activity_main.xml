@@ -28,7 +28,8 @@ android:layout_height="wrap_content"
 android:text="Spanish Proficiency Quiz"
 android:textStyle="bold"
 android:textSize="30sp"
-android:textAlignment="center"/>
+android:textAlignment="center"
+android:layout_marginTop="40dp"/>
 
 <EditText
 android:id="@+id/name_field"
