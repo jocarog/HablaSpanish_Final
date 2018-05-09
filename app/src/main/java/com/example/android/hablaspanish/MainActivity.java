@@ -3,18 +3,14 @@ package com.example.android.hablaspanish;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 @SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
@@ -52,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Checkbox 1 is the correct answer.
         // The logic here checks for answers 1 to be checked and all others to be unchecked.
-        return answer_2_1.isChecked() && !answer_2_2.isChecked() && !answer_2_3.isChecked();
+        return answer_2_1.isChecked() && !answer_2_2.isChecked() && answer_2_3.isChecked();
     }
 
 

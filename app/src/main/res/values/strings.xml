@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Habla Spanish</string>
+    <string name="say_2">2. "Help" can have two meanings, chose the correct ones</string>
+    <string name="say_1">1. Please Translate: Tengo Hambre</string>
+    <string name="answer_2_1">Ayudame</string>
+    <string name="answer_2_2">Auxilio</string>
+    <string name="answer_2_3">Ayuda</string>
+    <string name="answer_6_3">Puedo llamar a mi abogado?</string>
+    <string name="answer_6_2">Puedo llamar</string>
+    <string name="answer_6_1">Puedo nombrar a alguien</string>
 </resources>
